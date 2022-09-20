@@ -1,0 +1,3 @@
+User-Agent:*
+Disallow:/example/
+Sitemap:https://eizi-kobayashi.github.io/portfolio/sitemap
