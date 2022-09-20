@@ -1,0 +1,351 @@
+/*スマホ用*/
+@media screen and (max-width: 767px) {
+	section.bg_false + section.bg_false {
+		margin-top: 100px;
+	}
+	main.error section#mv_area .inner {
+		grid-template-columns: 5vw 1fr 5vw;
+		grid-template-rows: 1fr 1fr auto;
+	}
+	main.error section#mv_area {
+		width: 100%;
+		/*height: 230px;	*/
+	}
+
+	main.error section#mv_area .inner {
+		width: 100vw;
+		height: 100%;
+		display: grid;
+	}
+
+	main.error #mv_text {
+		opacity: .0;
+		font-size: 12vw;
+		text-align: left;
+		line-height: 1em;
+		letter-spacing: .7rem;
+		grid-column: 2;
+		grid-row: 3;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	main.error h1 {
+		grid-column: 2;
+		grid-row: 2;
+		z-index: 2;
+	}
+
+	main.error section#area01 {
+		width: 100%;
+	}
+	main.error section#area01 .inner {
+		/*background-color: silver;*/
+		width: 90vw;
+		margin: 0 auto;
+		height: 100%;
+
+	}
+	main.error section#area01 .inner p {
+		font-size: 14px;
+		text-align: center;
+		line-height: 25px;
+		margin-top: 40px;
+	}
+	@media (orientation: portrait){
+	 
+		/*デバイスが縦向きの場合の記述*/
+
+		section#area01 .inner {
+		}
+	}
+
+	@media (orientation: landscape){
+	 
+		/*デバイスが横向きの場合の記述*/
+
+	}
+}
+
+/*タブレット*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	section.bg_false + section.bg_false {
+		margin-top: 100px;
+	}
+	main.error section#mv_area .inner {
+		grid-template-columns: 5vw 1fr 5vw;
+		grid-template-rows: .5fr 1fr auto;
+	}
+	main.error section#mv_area {
+		width: 100%;
+		/*height: 230px;	*/
+	}
+
+	main.error section#mv_area .inner {
+		width: 100vw;
+		height: 100%;
+		display: grid;
+	}
+
+	main.error #mv_text {
+		opacity: .5;
+		font-size: 12vw;
+		text-align: left;
+		line-height: 1em;
+		letter-spacing: .7rem;
+		grid-column: 2;
+		grid-row: 3;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	main.error h1 {
+		grid-column: 2;
+		grid-row: 2;
+		z-index: 2;
+	}
+
+	main.error section#area01 {
+		width: 100%;
+	}
+	main.error section#area01 .inner {
+		/*background-color: silver;*/
+		width: 100vw;
+		margin: 0 auto;
+		height: 100%;
+
+	}
+	main.error section#area01 .inner p {
+		font-size: 14px;
+		text-align: center;
+		line-height: 25px;
+		margin-top: 40px;
+	}
+
+}
+
+/*PC*/
+@media screen and (min-width: 1024px) {
+	main.error section#mv_area .inner {
+		grid-template-columns: 1fr 720px 1fr;
+		grid-template-rows: 90px 54px auto 1fr;
+	}
+
+	main.error section#mv_area {
+		width: 100%;
+		height: 430px;	
+	}
+
+	main.error section#mv_area .inner {
+		width: 100vw;
+		height: 100%;
+		display: grid;
+	}
+
+	main.error #mv_text {
+		opacity: .5;
+		font-size: 170px;
+		text-align: center;
+		line-height: 1em;
+		letter-spacing: .7rem;
+		grid-column: 1 / 4;
+		grid-row: 3;
+		z-index: 1;
+	}
+	main.error h1 {
+		grid-column: 2;
+		grid-row: 2;
+		z-index: 2;
+	}
+
+	main.error section#area01 {
+		width: 100%;
+	}
+	main.error section#area01 .inner {
+		/*background-color: silver;*/
+		width: 1000px;
+		margin: 0 auto;
+		height: 100%;
+
+	}
+	main.error section#area01 .inner p {
+		font-size: 14px;
+		text-align: center;
+		line-height: 25px;
+		margin-top: 40px;
+	}
+}
+
+
+
+
+/*他*/
+
+#top_mainvis_catch > div:first-of-type {
+	line-height: 65px;
+	letter-spacing: .07em;
+    text-indent: -0.2em;
+    margin-left: 0.2em;
+}
+#top_mainvis_catch > div:first-of-type span {
+	margin-left: 0.1em;
+}
+/*スクロールダウン全体の場所*/
+.scrolldown2{
+    /*描画位置※位置は適宜調整してください*/
+  position:relative;
+  /*bottom:10px;*/
+  /*left:50%;*/
+}
+
+/*Scrollテキストの描写*/
+.scrolldown2 span{
+    /*描画位置*/
+  position: absolute;
+  left:-7px;
+  /*top:0;*/
+    /*テキストの形状*/
+  color: #f39800;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 丸の描写 */
+.scrolldown2:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    top:34px;
+    left:-4px;
+    /*丸の形状*/
+  width:10px;
+  height:10px;
+  border-radius: 50%;
+  background:#f39800;
+    /*丸の動き1.6秒かけて透過し、永遠にループ*/
+  animation:
+    circlemove 1.6s ease-in-out infinite,
+    cirlemovehide 1.6s ease-out infinite;
+}
+
+
+
+/*上から下にかけて丸が透過→不透明→透過する*/
+@keyframes cirlemovehide{
+      0%{opacity:0}
+     50%{opacity:1;}
+    80%{opacity:0.9;}
+  100%{opacity:0;}
+ }
+
+/* 線の描写 */
+.scrolldown2:after{
+  content:"";
+    /*描画位置*/
+  position: absolute;
+  /*top:34px;*/
+  left:0;
+    /*線の形状*/
+  width:2px;
+  height: 50px;
+  background:#f39800;
+}
+section#area01 {
+	width: 100%;
+	/*height: 438px;*/
+}
+
+section#area01 .inner .deco_txt {
+	grid-area: deco;
+}
+section#area01 .inner .read_txt {
+	grid-area: read;
+}
+section#area01 .inner p.desc_txt {
+	grid-area: desc;
+}
+section#area01 .inner .btn {
+	grid-area: _btn;
+}
+section#area01 .inner .img_wrap {
+	grid-area: img;
+}
+section#area02 {
+	width: 100%;
+	/*padding-top: 248px;*/
+/*	background-image: url(../../common/images/index/top_area02_bg.png);
+	background-repeat: no-repeat;
+	background-size: initial;
+	background-position: center;*/
+}
+
+ul#top_area02_list li {
+	/*background-repeat: no-repeat;*/
+	/*background-size: initial;*/
+	/*background-position: center top;*/
+}
+ul#top_area02_list li:nth-of-type(1) {
+	/*background-image: url(../../common/images/index/top_area02_01_img.jpg);*/
+}
+ul#top_area02_list li:nth-of-type(2) {
+	margin-bottom: 103px;
+	/*background-image: url(../../common/images/index/top_area02_02_img.jpg);*/
+}
+.list_inner {
+	/*margin: 0 auto;*/
+}
+.list_inner h3 {
+	font-size: 18px;
+}
+.list_inner .btn {
+	margin: 20px auto 0;
+}
+.list_inner > * + * {
+	margin-top: 20px;
+}
+section#area03 {
+	width: 100%;
+	/*height: 445px;*/
+	padding-top: 85px;
+	/*margin-bottom: 110px;*/
+}
+
+section#area03 .inner h2 {
+	grid-area: ttl;
+}
+section#area03 .inner h3 {
+	letter-spacing: .07em;
+	grid-area: hed;
+	font-size: 19px;
+}
+section#area03 .inner p.desc_txt {
+	grid-area: des;
+}
+section#area03 .inner div.btn {
+	grid-area: btn;
+}
+section#area03 .inner div.img_wrap {
+	grid-area: img;
+}
+section#seo_area {
+	width: 100%;
+}
+
+
+section#seo_area .inner .deco_txt {
+	grid-area: deco;
+}
+section#seo_area .inner .read_txt {
+	grid-area: read;
+}
+section#seo_area .inner .desc_txt {
+	grid-area: desc;
+}
+
+

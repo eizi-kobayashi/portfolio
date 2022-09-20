@@ -1,0 +1,24 @@
+<svg id="contact_area_arrow" xmlns="http://www.w3.org/2000/svg" width="94.5" height="73" viewBox="0 0 94.5 73">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+      }
+
+      .cls-1 {
+        stroke-width: 3px;
+        stroke-dasharray: 0.001 6;
+      }
+
+      .cls-2 {
+        stroke-linejoin: round;
+        stroke-width: 4px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="楕円形_4" data-name="楕円形 4" class="cls-1" cx="58" cy="36.5" r="35"/>
+  <path id="シェイプ_16" data-name="シェイプ 16" class="cls-2" d="M1586,3632h49l-8-8" transform="translate(-1582 -3595.5)"/>
+</svg>

@@ -1,0 +1,278 @@
+@media screen and (min-width: 481px) { } 【スマートフォン横】
+@media screen and (min-width: 769px) { } 【タブレット縦以上】
+@media screen and (min-width: 1025px) {/*【PC】*/
+	nav {
+		display: none;
+	}
+} 
+
+section#mv_area {
+	width: 100%;
+	height: 526px;	
+}
+section#mv_area .inner {
+	width: 100vw;
+	height: 100%;
+	display: grid;
+	grid-template-columns: calc((50vw - 600px ) + 705px) 376px 1fr;
+	grid-template-rows: 124px auto 60px 1fr;
+}
+#slider {
+	grid-column: 1 / 4;
+	grid-row: 1 / 5;
+}
+.slick-slide > img {
+	border-radius: 0 30px 30px 0;
+}
+
+#top_mainvis_catch {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;	
+	z-index: 60;
+}
+#scroll {
+	width: 100%;
+	height: 100%;
+	grid-column: 2 / 3;
+	grid-row: 4 / 5;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+}
+#top_mainvis_catch > div:first-of-type {
+	line-height: 65px;
+	letter-spacing: .07em;
+    text-indent: -0.2em;
+    margin-left: 0.2em;
+}
+#top_mainvis_catch > div:first-of-type span {
+	margin-left: 0.1em;
+}
+/*スクロールダウン全体の場所*/
+.scrolldown2{
+    /*描画位置※位置は適宜調整してください*/
+  position:relative;
+  /*bottom:10px;*/
+  /*left:50%;*/
+}
+
+/*Scrollテキストの描写*/
+.scrolldown2 span{
+    /*描画位置*/
+  position: absolute;
+  left:-7px;
+  top:0;
+    /*テキストの形状*/
+  color: #f39800;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 丸の描写 */
+.scrolldown2:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    top:34px;
+    left:-4px;
+    /*丸の形状*/
+  width:10px;
+  height:10px;
+  border-radius: 50%;
+  background:#f39800;
+    /*丸の動き1.6秒かけて透過し、永遠にループ*/
+  animation:
+    circlemove 1.6s ease-in-out infinite,
+    cirlemovehide 1.6s ease-out infinite;
+}
+
+/*下からの距離が変化して丸の全体が上から下に動く*/
+@keyframes circlemove{
+      0%{top:30px;}
+     100%{top:80px;}
+ }
+
+/*上から下にかけて丸が透過→不透明→透過する*/
+@keyframes cirlemovehide{
+      0%{opacity:0}
+     50%{opacity:1;}
+    80%{opacity:0.9;}
+  100%{opacity:0;}
+ }
+
+/* 線の描写 */
+.scrolldown2:after{
+  content:"";
+    /*描画位置*/
+  position: absolute;
+  top:34px;
+  left:0;
+    /*線の形状*/
+  width:2px;
+  height: 50px;
+  background:#f39800;
+}
+section#area01 {
+	width: 100%;
+	height: 438px;
+}
+section#area01 .inner {
+	/*background-color: silver;*/
+	width: 1000px;
+	margin: 0 auto;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 48px 383px 37px auto;
+	grid-template-rows: 24px auto 30px auto 40px auto 40px 60px auto;
+	grid-template-areas:
+	".... .... .... img"
+	".... deco .... img"
+	".... .... .... img"
+	".... read read img"
+	".... .... .... img"
+	".... desc .... img"
+	".... .... .... img"
+	".... _btn .... img"
+	".... .... .... img";
+}
+section#area01 .inner .deco_txt {
+	grid-area: deco;
+}
+section#area01 .inner .read_txt {
+	grid-area: read;
+}
+section#area01 .inner p.desc_txt {
+	grid-area: desc;
+}
+section#area01 .inner .btn {
+	grid-area: _btn;
+}
+section#area01 .inner .img_wrap {
+	grid-area: img;
+}
+section#area02 {
+	width: 100%;
+	height: 906px;
+	padding-top: 248px;
+	background-image: url(../../common/images/index/top_area02_bg.png);
+	background-repeat: no-repeat;
+	background-size: initial;
+	background-position: center;
+}
+section#area02 .inner {
+	width: 905px;
+	height: 720px;
+	margin: 0 auto;
+}
+ul#top_area02_list {
+	height: 624px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-content: space-between;
+}
+ul#top_area02_list li {
+	width: 425px;
+	height: 240px;
+	padding-top: 280px;
+	border-radius: 30px;
+	background-color: #fff;
+}
+ul#top_area02_list li {
+	background-repeat: no-repeat;
+	background-size: initial;
+	background-position: center top;
+}
+ul#top_area02_list li:nth-of-type(1) {
+	background-image: url(../../common/images/index/top_area02_01_img.jpg);
+}
+ul#top_area02_list li:nth-of-type(2) {
+	margin-bottom: 103px;
+	background-image: url(../../common/images/index/top_area02_02_img.jpg);
+}
+.list_inner {
+	width: 355px;
+	margin: 0 auto;
+}
+.list_inner .btn {
+	margin: 20px auto 0;
+}
+.list_inner > * + * {
+	margin-top: 20px;
+}
+section#area03 {
+	width: 100%;
+	height: 445px;
+	padding-top: 85px;
+	margin-bottom: 110px;
+}
+section#area03 .inner {
+	height: 446px;
+	display: grid;
+	grid-template-columns: 65px 522px 38px 421px 20px 1fr;
+	grid-template-rows: 26px auto 70px auto 33px auto 38px 60px 1fr;
+	grid-template-areas:
+	". ... . ttl ... ."
+	". img . ttl ... ."
+	". img . ... ... ."
+	". img . hed hed ."
+	". img . ... ... ."
+	". img . des ... ."
+	". img . ... ... ."
+	". img . btn ... ."
+	". img . ... ... .";
+}
+section#area03 .inner h2 {
+	grid-area: ttl;
+}
+section#area03 .inner h3 {
+	letter-spacing: .07em;
+	grid-area: hed;
+}
+section#area03 .inner p.desc_txt {
+	grid-area: des;
+}
+section#area03 .inner div.btn {
+	grid-area: btn;
+}
+section#area03 .inner div.img_wrap {
+	grid-area: img;
+}
+section#seo_area {
+	width: 100%;
+	height: 328px;
+}
+section#seo_area .inner {
+	display: grid;
+	grid-template-columns: 1fr 274px 54px 578px 1fr;
+	grid-template-rows: 115px auto 0px auto auto;
+	grid-template-areas:
+	". .... . .... ."
+	". deco . desc ."
+	". .... . desc ."
+	". read . desc ."
+	". .... . .... .";
+}
+#seo_bg {
+	font-size: 170px;
+	letter-spacing: .066em;
+	grid-column: 1 / 6;
+	grid-row: 1 / 6;
+	line-height: 1em;
+}
+section#seo_area .inner .deco_txt {
+	grid-area: deco;
+}
+section#seo_area .inner .read_txt {
+	grid-area: read;
+}
+section#seo_area .inner .desc_txt {
+	grid-area: desc;
+}
+
+

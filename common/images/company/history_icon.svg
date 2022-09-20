@@ -1,0 +1,15 @@
+<svg id="company_area04_09_icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c6a16d;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <circle id="楕円形_3" data-name="楕円形 3" class="cls-1" cx="8" cy="8" r="8"/>
+  <circle id="楕円形_3-2" data-name="楕円形 3" class="cls-2" cx="8" cy="8" r="3"/>
+</svg>
